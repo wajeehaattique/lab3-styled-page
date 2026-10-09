@@ -57,3 +57,41 @@
       <h2>Fun Fact</h2>
       <p>Your fun fact.</p>
     </aside
+<section id="media" class="card">
+      <h2>A Short Clip</h2>
+      <video controls width="480">
+        <source src="intro.webm" type="video/webm">
+        <source src="intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p><strong>Transcript summary:</strong> What the clip says.</p>
+    </section>
+ 
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <fieldset>
+          <legend>Send me a message</legend>
+          <div class="row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic"> ... options ... </select>
+          </div>
+          <div class="radio-group"> ... two radio labels ... </div>
+          <!-- repeat the .field pattern for: checkbox, date,
+               range, and the message textarea -->
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+      <button id="clear-btn" type="button">Clear Saved Data</button>
+    </section>
+  </main>
