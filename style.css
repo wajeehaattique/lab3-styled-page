@@ -81,3 +81,63 @@ label + textarea {
   width: 100%;
   margin-top: 4px;
 }
+input[required],
+textarea[required] {
+  border-left: 4px solid var(--accent);
+}
+ 
+input[type="email"] {
+  background: #f0f6ff;
+}
+a, button {
+  transition: background 0.2s, color 0.2s;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+ 
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+ 
+.tags li:nth-child(even) {
+  background: #e7f7f1;
+}
+#timeline li:first-child {
+  font-weight: 700;
+}
+#timeline li:last-child {
+  color: var(--accent);
+}
+h2::before {
+  content: "\00BB\00A0";
+  color: var(--accent);
+}
+ 
+blockquote::before {
+  content: "\201C";
+  font-size: 3rem;
+  line-height: 0;
+  vertical-align: -0.4em;
+  margin-right: 4px;
+  color: var(--accent);
+}
+ 
+a[href^="http"]::after {
+  content: " (external)";
+  font-size: 0.8em;
+  color: var(--muted);
+}
+ 
+::selection {
+  background: var(--brand);
+  color: #fff;
+}
+
