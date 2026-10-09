@@ -140,4 +140,8 @@ a[href^="http"]::after {
   background: var(--brand);
   color: #fff;
 }
+/* ---- TEMPORARY EXPERIMENT: delete after Step 2.10 ---- */
+p { color: red; }
+.card p { color: blue; }
+#about p { color: green; }
 
